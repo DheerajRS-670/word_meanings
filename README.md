@@ -24,6 +24,7 @@ In the program two types of values are given to the alphabets for identifying th
 Some good things to know:
     a. There are nearly the same number of words of each "type" in the english dictionary
 
+```bash
 $ pwd
 /word_meanings/arranged/chaldean
 $ for file in *
@@ -39,6 +40,7 @@ $ for file in *
 7.txt ->     8056
 8.txt ->     8028
 9.txt ->     8048
+```
 
     b. Mathematically too, it is possible to classify numbers:
 
