@@ -54,7 +54,7 @@ $ for file in *
     
 However, we don't notice this even distribution when checking with words starting with specific letters though:
 
-'''bash
+```bash
 $ cat words | grep -i "^a.*$" | wc -l
     5895
 $ cat words | grep -i "^b.*$" | wc -l
@@ -71,4 +71,4 @@ $ cat words | grep -i "^x.*$" | wc -l
       53
 $ cat words | grep -i "^n.*$" | wc -l
     2018
-'''
+```
