@@ -1,0 +1,37 @@
+#!/bin/bash
+
+export chaldean="True"
+
+if [ "$1" == '' ]; then
+    echo "./find some-word-without-spaces [c/n]"
+    exit 1
+fi
+
+if [ "$2" == 'n' ]; then
+    chaldean="False"
+fi
+
+if [[ "$1" =~ ^[0-9]+$ ]]; then
+    if [ $chaldean} == "True" ]; then
+        cat ../arranged/chaldean/$1.txt
+    else
+        cat ../arranged/normal/$1.txt
+    fi
+fi
+                               
+if [ ${chaldean} == "True" ]; then
+    echo "Chaldean:"
+    lines=`grep -iR "$1" ../arranged/chaldean/*`
+else
+    echo "Normal:"
+    lines=`grep -iR "$1" ../arranged/normal/*`
+fi
+
+for line in ${lines}
+do
+    first=`echo ${line} | cut -d ':' -f 1`
+    first=`echo ${first} | awk -F/ '{print $NF}'`
+    first=`echo ${first} | cut -d '.' -f 1`
+    second=`echo ${line} | cut -d ':' -f 2`
+    echo "${first} -> ${second}"
+done

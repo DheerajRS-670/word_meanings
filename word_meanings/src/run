@@ -1,0 +1,16 @@
+#!/bin/bash
+
+if [ "$1" == "" ]; then
+    echo "Program to identify values of each word in english:"
+    echo "NOTE: Below, n stands for \"normal\""
+    echo "${0} any-word-without-space [n]"
+    exit 1
+fi
+
+type=""
+    
+if [ "${2}" != "" ]; then
+    type="-n"
+fi
+        
+python3 word_meanings.py -w ${1} ${type}

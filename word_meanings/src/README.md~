@@ -1,0 +1,18 @@
+This program finds out the combined single digit number representing
+ a given word. Each word has a meaning, and this program helps identify the
+ meaning of a word. The meaning of the word can be identified by reducing the word
+ to a single digit number (may be multiple digits later) which has a specific
+ meaning
+
+Below are the meanings of single digit numbers that I have identified based on classification
+ of words:
+
+1: soul
+2: separate
+3: how nature works
+4: incomplete
+5: nature, satisfaction, mind
+6: challenge, intensify, realize
+7: unending, learn, detect, innovate, inspire
+8: complete
+9: dark, immature, death

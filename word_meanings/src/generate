@@ -1,0 +1,5 @@
+#!/bin/bash
+
+python3 word_meanings.py
+
+echo "Generation of word classifications done"
