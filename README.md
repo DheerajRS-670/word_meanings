@@ -7,6 +7,7 @@ This program finds out the combined single digit number representing
 Below are the meanings of single digit numbers that I have identified based on classification
  of words:
 
+```
 1: soul
 2: separate
 3: how nature works
@@ -16,6 +17,7 @@ Below are the meanings of single digit numbers that I have identified based on c
 7: unending, learn, detect, innovate, inspire
 8: complete
 9: dark, immature, death
+```
 
 In the program two types of values are given to the alphabets for identifying the class of words:
     a. Normal allocation ('a' -> 1, 'b' -> 2, 'c' -> 3 and so on)
@@ -50,3 +52,23 @@ $ for file in *
         When a number is multiplied with 9, and the digits of the result are added together,
          it will always sum to 9
     
+However, we don't notice this even distribution when checking with words starting with specific letters though:
+
+'''bash
+$ cat words | grep -i "^a.*$" | wc -l
+    5895
+$ cat words | grep -i "^b.*$" | wc -l
+    6068
+$ cat words | grep -i "^c.*$" | wc -l
+    9521
+$ cat words | grep -i "^d.*$" | wc -l
+    5823
+$ cat words | grep -i "^z.*$" | wc -l
+     281
+$ cat words | grep -i "^y.*$" | wc -l
+     421
+$ cat words | grep -i "^x.*$" | wc -l
+      53
+$ cat words | grep -i "^n.*$" | wc -l
+    2018
+'''
