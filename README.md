@@ -20,11 +20,12 @@ Below are the meanings of single digit numbers that I have identified based on c
 ```
 
 In the program two types of values are given to the alphabets for identifying the class of words:
-    * Normal allocation ('a' -> 1, 'b' -> 2, 'c' -> 3 and so on)
-    * Chaldean system of allocation of numbers
+
+    1. Normal allocation ('a' -> 1, 'b' -> 2, 'c' -> 3 and so on)
+    2. Chaldean system of allocation of numbers
 
 Some good things to know:
-    * There are nearly the same number of words of each "type" in the english dictionary
+    1. There are nearly the same number of words of each "type" in the english dictionary
 
 ```bash
 $ pwd
@@ -44,7 +45,7 @@ $ for file in *
 9.txt ->     8048
 ```
 
-    * Mathematically too, it is possible to classify numbers:
+    2. Mathematically too, it is possible to classify numbers:
 
         For example, the number 1 will always maintain the uniqueness of a person. When you multiply
          any number with 1, you will get the same number as the result
